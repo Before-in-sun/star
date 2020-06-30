@@ -1,0 +1,515 @@
+#wrap{}
+#header{}
+#section{}
+#footer{}
+
+.inner{
+    max-width: 1280px;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 1.5rem; 
+    font-family: 'Nanum Gothic';
+}
+h3{
+    font-size: 1rem; 
+    color:#ccc;/* 파포무드보드보고 색 정할것 */
+}
+
+
+/*********************header****************************/
+#header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.popup{
+    width:100%;
+    min-width: 1024px;
+    overflow: hidden;
+}
+.popup img{
+    position:relative;
+    width:2000px;
+    left:calc(50% - 1000px);
+}
+.popup a{
+    font-size: 0.8rem;
+    position:absolute;
+    top:40px; right:480px;
+}
+.popup .pop_close{
+    position: absolute;
+    top:10px; right:340px;
+}
+.popup .pop_close {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+}
+
+#header .inner{
+    position: relative;
+}
+#header .logo{
+    float:left;
+    width:150px;
+    margin-top:30px;
+}
+#header .logo img{
+    width:100%;
+}
+#header .header_top{
+    float:left;
+    width:calc(100% - 250px);
+    text-align: right;
+}
+#header .language{
+    margin-top:20px;
+    margin-left:200px;
+    width:4rem;
+    text-align: center;/* ul에 적용하는거로 변경 가능함~*/
+    position:relative;
+    display: inline-block;
+}
+#header .language ul{
+    width:60px; height:70px;
+    display: none;
+    position: absolute; 
+    text-align: center;
+    top:1.5rem; left:0;
+}
+#header .language ul li{
+    font-size: 0.85rem;
+    line-height: 20px;
+}
+#header .language ul li:hover{
+    font-weight: 600;
+}
+#header .language button{
+    color:#666;
+    background: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+#header .header_top button{
+    background: none;
+    background: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+}
+
+#full_nav{
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 9999;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffeda8+0,f4cc97+31,ea908f+100 */
+background: #ffeda8; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ffeda8 0%, #f4cc97 31%, #ea908f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ffeda8 0%,#f4cc97 31%,#ea908f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ffeda8 0%,#f4cc97 31%,#ea908f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeda8', endColorstr='#ea908f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+#full_nav .f_logo{
+    margin-top:50px;
+    width:100px;
+}
+#full_nav .f_logo img{
+    width:200%;
+}
+#full_nav .f_close{
+    float:right;
+    font-size: 3rem;
+    margin-right:50px;
+}
+#full_nav .nav{
+    margin-top:200px; 
+}
+#full_nav .depth1{
+}
+#full_nav .depth1 > li{
+    float:left;
+    text-align: center;
+    padding-left:100px;
+}
+#full_nav .depth1 > li a:hover{
+    border-bottom:1px solid #000;
+}
+#full_nav .depth1 > li:first-child{
+    padding-left:40px;
+}
+#full_nav .depth1 > li > a{
+    color:#000;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#full_nav .depth2{
+    margin-top:50px;
+}
+#full_nav .depth2 li{
+    margin-top:40px;
+    text-align: center;
+}
+#full_nav .depth2 li a{
+    color:#001;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#header .pop_open{
+    cursor: pointer;
+    width:50px;
+    position: absolute;
+    top:53px; right:0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+#nav{
+    float:left;
+    margin-top:10px;
+    width:calc(100% - 250px);
+    position: relative;
+    z-index: 9999;
+}
+#header #nav .depth1{
+    margin-top:27px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+#header #nav .depth1 > li{
+    float:left;
+    padding-left:50px;
+}
+#header #nav .depth1 > li a{
+    display: block;
+    line-height: 60px;
+}
+#header #nav .depth1 ul{
+    width:100%;
+    padding:0px 0;
+    background-color: rgb(59, 58, 58,0.5);
+    position: absolute;
+    left:0; top:85px;
+    display: none;
+}
+#header #nav .depth1 > li:hover ul{
+    display: block;
+
+}
+#header #nav .depth1  ul li{
+    margin-left:20px;
+    padding:0 5px;
+    display: inline-block;
+    /* 점은 배경그림으로 만든다 background:url(../)no-repeat; */
+}
+#header #nav .depth1  ul li a{
+    color:#fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+#header #nav .depth2 li a:hover{
+    font-weight: 700;
+}
+#header #nav .sitemap{
+    cursor: pointer;
+    border:none;
+    background:none;
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgb(249,157,36);
+    margin-top:20px;
+    margin-right:-37px;
+    float:right;
+}
+/*********************section****************************/
+.bxslider > div >img {width:100%;}
+
+#section2 h2{
+    margin-top:70px;
+    text-align: center;
+}
+#section2 h3{
+    text-align: center;
+}
+#section2 .icon_box{
+    width:909px;
+    margin:0  auto;
+}
+#section2 .inner div {
+    display: block;
+    position: relative;
+}
+/***************** 박스테두리 애니메이션 *******************/
+#section2 .inner .box:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 0%;
+    border-top:4px solid  transparent; 
+    border-right:4px solid  transparent;
+    box-sizing: border-box;
+    /* border-top: 4px solid transparent;
+    border-right: 4px solid transparent; */
+}
+
+#section2 .inner .box:hover:before,
+#section2 .inner .box:focus:before{
+    border-color: #ef4b49;
+    width: 100%;
+    height: 100%;
+    transition: width .4s, height .4s .4s;
+}
+
+
+#section2 .inner .box:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 0%;
+    border-bottom:5px solid  transparent; 
+    border-left:5px solid  transparent;
+    box-sizing: border-box;
+    /* border-top: 4px solid transparent;
+    border-right: 4px solid transparent; */
+}
+
+#section2 .inner .box:hover:after,
+#section2 .inner .box:focus:after{
+    border-color: #ef4b49;
+    width: 100%;
+    height: 100%;
+    transition: width 0.4s, height 0.4s 0.4s;
+}
+/******************************************************/
+
+
+#section2 .box{
+    margin-top:40px;
+    margin-bottom:110px;
+    float:left;
+    width:300px;
+    height:370px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#section2 .box:last-child{
+    border-right:1px solid #ccc;
+}
+#section2 .box p{
+    margin-top:30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+#section2 .box img{
+    width:80px;
+    margin-top:50px;
+    margin-left:100px;
+}
+#section2 .box button{
+    width:100px;
+    height:30px;
+    display: block;
+    margin-left:90px;
+    margin-top:50px;
+    background:none;
+    font-size: 1rem;
+    color:#ef4b49;
+    border:1px solid #ef4b49;
+}
+#section2 .box:hover button{
+    background-color: #ef4b49;
+    color:#fff;
+    margin-top:15px;
+}
+#section2 .box .on{
+    font-size: 0.9rem;
+    font-weight: 500;
+    width:230px;
+    height:100px;
+    margin-left:30px;
+    margin-top:105px;
+    display: none;
+}
+#section2 .box:hover .on{
+    display: block;
+}
+#section2 .box:hover  img{
+    display: none;
+}
+/*
+#section2 .box:hover{
+    border: 3px solid rgb(238,46,36);
+}*/
+#section2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#section3{}
+#section3 .inner .regular div:first-child{
+    margin-right:30px;
+}
+#section3 .inner .regular div img{
+    width:100%;
+}
+.slick-arrow{
+    position: absolute;
+    top:20%;
+    z-index: 9999;
+    width:100px;
+    height:50px;
+    background:none;
+    border:2px solid rgb(255, 196, 0);
+    /* border-radius: 50px; */
+    display: block;
+    text-indent: -99999px;
+}
+.slick-prev{
+    left:50px;
+    background: url(../images/화살표.png) no-repeat 0 0 ;
+}
+.slick-next{
+    right:50px;
+}
+.slick-dots{
+    position: absolute;
+    bottom:-20px;
+    width:100%;
+    text-align: center;
+    margin-bottom: -20px;
+}
+.slick-dots li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.slick-dots li button{
+    display: block;
+    text-indent: -99999px;
+    width:70px;
+    height:3px;
+    background-color: rgb(255, 196, 0);
+
+    border: none;
+}
+.slick-dots li.slick-active button{
+    
+}
+
+.slick-dots li button::before{
+    content:'';
+    display: block;
+    width:0;
+    height:100%;
+    background-color: rgb(80, 162, 255);
+    transition: 0.5s;
+}
+.slick-dots li.slick-active button::before{
+    width:100%;
+    transition: 0.5s;
+}
+
+
+#section5::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#section5 .video_back{
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+#section5 .video_back img{
+    width:100%;
+}
+
+
+#section6::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#section6{
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+#section6 h2{
+    margin-top:70px;
+    text-align: center;
+}
+#section6 h3{
+    text-align: center;
+}
+#section6 .event{
+    margin-left:70px;
+    margin-top:30px;
+}
+#section6 .event li{
+    float:left;
+    margin-left:30px;
+}
+#section6 .event li img{
+    width:350px;
+}
+#section6 .event li p{
+    margin-top:20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+#section6 .event li span{
+    display: block;
+    font-size: 0.8rem;
+    margin-top:10px;
+}
+
+
+
+/*********************footer****************************/
+#footer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#footer{
+    width:100%;
+    height:120px;
+    background-color: #ccc;
+}
+#footer p>a{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left:30px;
+    margin-top:30px;
+    line-height: 50px;;
+}
+#footer p > a:first-child{
+    margin-left: 0px;
+}
+#footer .f_h p{
+    float:left;
+}
+#footer .f_bottom{
+    float:left;
+    font-size: 0.8rem;
+}
