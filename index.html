@@ -20,7 +20,9 @@
 <script src="js/jquery-ui.min.js"></script>
 <script src="css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.vticker-min.js"></script>
 <script src="js/main.js"></script>
+
 
 
 </head>
@@ -33,7 +35,6 @@
         <h1 class="f_logo"><a href="#">
           <img src="images/logo--.png" alt="">
         </a></h1>
-
     <nav class="nav">
       <ul class="depth1">
         <li><a href="#">병원소개</a>
@@ -104,9 +105,14 @@
   <div class="popup">
     <img src="images/banner.png" alt="광고그림">
     <a href="#">무료상담신청  ▶</a>
-    <button class="pop_close">X</button>
+    <button class="pop_close">x</button>
   </div>
-
+  <div id="quick">
+    <img src="images/q1.png" alt="">
+    <img src="images/q1.png" alt="">
+    <img src="images/q1.png" alt="">
+    <img src="images/q1.png" alt="">
+  </div>
   <header id="header">
     <div class="inner">
       <h1 class="logo"><a href="#">
@@ -183,10 +189,16 @@
             <li><a href="#">日本語</a></li>
           </ul>
           </div>
-        <button class="sitemap">전체보기</button>
+          <div class="sitemap">
+          <span></span>
+          <span></span>
+          <span></span>
+          </div>
       </nav>
 
-      <p class="pop_open">∧</p>
+      <p class="pop_open">
+        <img src="images/push.png" alt="">
+      </p>
     </div>
   </header>
   <div id="wrap">
@@ -195,25 +207,57 @@
 
     <div class="bxslider">
       <div>
-        <img src="images/main_people.png" alt=""> 
+        <img src="images/main_people3.png" alt=""> 
       </div>
       <div>
-        <img src="images/main_student.png" alt="">
+        <img src="images/main-student2.png" alt="">
       </div>
       <div>
-        <img src="images/main3-1.png" alt="">
+        <img src="images/main3-2.png" alt="">
       </div>
 
     </div>  
 
-    <div id="notice" class="inner">
-      <div class="info">
-        <p>공지사항</p> 
-        공지사항 슬라이더
-      </div>
-      <div class="search">
-        <p>최근인기검색어</p>  
-        검색슬라이더
+    <div id="notice" class="notice_inner">
+      <div class="rolling_box1">
+        <div class="notice_tit">
+          공지사항
+        </div>
+        <div id="notice_rolling1">
+         <ul>
+           <li>
+             <a href="#">홈페이지 리뉴얼 이벤트 당첨자 발표</a>
+             <a href="#">2020.06.30</a>
+           </li>
+           <li>
+             <a href="#">8월 후기여왕 이벤트</a>
+             <a href="#">2020.06.10</a>
+           </li>
+           <li>
+             <a href="#">8월 할인 이벤트</a>
+             <a href="#">2020.06.20</a>
+           </li>
+         </ul>
+        </div>
+        <div class="serch_tit">
+          최근인기검색어
+        </div>
+        <div id="serch_rolling1">
+          <ul>
+            <li>
+              <a href="#">1. 여드름케어</a>
+              <a href="#">2020.06.30</a>
+            </li>
+            <li>
+              <a href="#">2.  예신예랑케어</a>
+              <a href="#">2020.06.10</a>
+            </li>
+            <li>
+              <a href="#">3.  레이저토닝케어</a>
+              <a href="#">2020.06.20</a>
+            </li>
+          </ul>
+         </div>
       </div>
     </div>
   </section>
@@ -226,19 +270,19 @@
       <div class="icon_box">
       <div class="box"><a href="#">
         <p>여드름 치료 프로그램</p>
-        <img src="images/acna.png" alt="">
+        <img src="images/icon-1.png" alt="">
         <p class="on">피부손상없는 세포재생술을 통한 염증자연소실로 피부속 여드름의 근본원인까지 치료합니다.</p>
         <button>자세히보기</button></a>
       </div>
       <div class="box"><a href="#">
         <p>필러 & 실리프팅</p>
-        <img src="images/icon1.png" alt="">
-        <p class="on">개인상태에 맞춤 프로그램으로 탄력리프팅효과를 기대할 수 있습니다.</p>
+        <img src="images/icon-2.png" alt="">
+        <p class="on">개인상태에 맞춤 프로그램으로 탄력 리프팅효과를 기대할 수 있습니다.</p>
         <button>자세히보기</button></a>
       </div>
       <div class="box"><a href="#">
         <p>여름대비 프로그램</p>
-        <img src="images/icon3.png" alt="">
+        <img src="images/icon-3.png" alt="">
         <p class="on">영양공급 및 주름&탄력개선 등 스타가 추천하는 여름대비 특별한 프로그램</p>
         <button>자세히보기</button></a>
       </div>
@@ -248,70 +292,139 @@
 
   <section id="section3">
     <div class="inner">
-      <h2>dkfkffkk</h2>
-      <h3>aglkjagralkjgjlgalakjglkajkl</h3>
-      <section class="regular slider">
-        <div>
-          <img src="images/시술배너2.png">
-        </div>
-        <div>
-          <img src="images/레이저토닝.png">
-        </div>
-        <div>
-          <img src="images/시술배너2.png">
-        </div>
-        <div>
-          <img src="images/레이저토닝.png">
-        </div>
-      </section>
-    </div>
-  </section>
+       <h2>스타피부과 시술소개</h2>
+       <h3>오직 스타피부과에서만 경험할 수 있는 특별한 시술을 여러분께 소개합니다.</h3>
 
-  <section id="section4">
+      <div class="regular slider">
+        <div>
+          <img src="images/레이저토닝.png" alt="">
+        </div>
+        <div>
+          <img src="images/시술배너2.png" alt="">
+        </div>
+        <div>
+          <img src="images/레이저토닝.png" alt="">
+        </div>
+        <div>
+          <img src="images/시술배너2.png" alt="">
+        </div>
+      </div>
+      </section>
+     
+    <section id="section4">
     <div class="inner">
-      <div class="sec4_tit"></div>
+      <div class="sec4_tit">
+        <img src="images/시술전후.png" alt="">
+      </div>
       <div class="sec4_slide">
-        <h2></h2>
-        <h3></h3>
-        <section class="center slider">
+        <h2>시술전후</h2>
+        <section class="regular2 slider">
           <div>
-            <img src="http://placehold.it/350x300?text=1">
+            <img src="images/be&aft1.jpg">
           </div>
           <div>
-            <img src="http://placehold.it/350x300?text=2">
+            <img src="images/be&aft2.jpg">
           </div>
           <div>
-            <img src="http://placehold.it/350x300?text=3">
+            <img src="images/be&aft3.jpg">
           </div>
           <div>
-            <img src="http://placehold.it/350x300?text=4">
+            <img src="images/be&aft1.jpg">
           </div>
           <div>
-            <img src="http://placehold.it/350x300?text=5">
+            <img src="images/be&aft2.jpg">
           </div>
           <div>
-            <img src="http://placehold.it/350x300?text=6">
-          </div>
-          <div>
-            <img src="http://placehold.it/350x300?text=7">
-          </div>
-          <div>
-            <img src="http://placehold.it/350x300?text=8">
-          </div>
-          <div>
-            <img src="http://placehold.it/350x300?text=9">
+            <img src="images/be&aft3.jpg">
           </div>
         </section>
       </div>
     </div>
   </section>
 
-  <section id="section5">
-    <div class="video_back">
-      <img src="images/video.png" alt="">
-    </div>
+  
+        
+        <!-- <div class="sec4_tit">
+        <img src="images/시술전후.png">
+          </div>
+          <div class="sec4_slide2">
+       <section class="regular2 slider">
+        <h2>치료전후사진</h2>
+         <div>
+           <img src="images/be&aft1.jpg">
+         </div>
+         <div>
+           <img src="images/be&aft2.jpg">
+         </div>
+         <div>
+           <img src="images/be&aft3.jpg">
+         </div>
+         <div>
+           <img src="images/be&aft1.jpg">
+         </div>
+         <div>
+           <img src="images/be&aft2.jpg">
+         </div>
+         <div>
+           <img src="images/be&aft3.jpg">
+         </div>
+       </section>
+      </div> -->
+
+  <!-- <section id="section4">
     <div class="inner">
-      <div class="">
+      <div class="sec4_tit">
+        <img src="images/시술전후.png" alt="">
+      </div>
+      <div class="sec4_slide">
+         <h2>제목</h2>
+         <h3>작은제목</h3>
+         <section class="center slider">
+          <div>
+            <img src="images/be&aft1.jpg">
+          </div>
+          <div>
+            <img src="images/be&aft2.jpg">
+          </div>
+          <div>
+            <img src="images/be&aft3.jpg">
+          </div>
+        </section>
+        </div>
+    </div>
+   </section> -->
+
+
+
+  <!-- <section id="section4">
+    <div class="inner">
+      <div class="sec4_tit">
+        <img src="images/시술전후.png" alt="">
+      </div>
+      <div class="sec4_slide">
+        <h2></h2>
+        <h3></h3>
+        <section class="center slider">
+          <div>
+            <img src="images/be&aft1.jpg">
+          </div>
+          <div>
+            <img src="images/be&aft2.jpg">
+          </div>
+          <div>
+            <img src="images/be&aft3.jpg">
+          </div>
+        </section>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="section5">
+    <div class="inner">
+      <div class="video_back">
+        <img src="images/video-banner2.png" alt="">
+        <div class="on"></div>
+        <p>〉</p>
       </div>
     </div>
   </section>
@@ -322,20 +435,20 @@
       <h3>스타미 피부과의 새소식을 전해드립니다</h3>
       <ul class="event">
         <li><a href="#">
-          <img src="images/페이지리뉴얼.png" alt="">
+          <img src="images/페이지리뉴얼.png" alt=""></a>
           <p>[페이지 리뉴얼 이벤트]</p>
           <span>여러분께 스타미에서 드리는 혜택들...</span>
-        </a></li>
+        </li>
         <li><a href="#">
-          <img src="images/8월-이벤트.png" alt="">
+          <img src="images/8월-이벤트.png" alt=""></a>
           <p>[8월 이벤트 대축제]</p>
           <span>올여름 스타미 피부과에서...</span>
-        </a></li>
+        </li>
         <li><a href="#">
-          <img src="images/베스트휴기.png" alt="">
+          <img src="images/review.png" alt=""></a>
           <p>[베스트 후기고객님을 찾아라]</p>
           <span>후기 고객님들 중 한분을 ...</span>
-        </a></li>
+        </li>
       </ul>
     </div>
   </section>
@@ -343,9 +456,14 @@
   </div>
   <footer id="footer">
     <div class="inner">
+      <h5>
+      <img src="images/logo--.png" alt="logo">
+    </h5>
       <p>
         <a href="#">개인정보방침</a>
         <a href="#">이용약관</a>
+        <a href="#">회사소개</a>
+        <a href="#">사이트맵</a>
       </p>
       <p class="f_bottom">스타미피부과 112-18-5054 대표자:전인혜<br>
         부산광역시 광역구 광역동 442-7번지 2층<br>
