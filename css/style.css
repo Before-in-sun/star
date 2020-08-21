@@ -265,7 +265,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeda8', end
     position: absolute;
     top:-130px; left:0px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.918);
     opacity: 0.7;
 }
 .notice_tit{
@@ -274,7 +274,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeda8', end
     line-height: 50px;
     font-weight: 600;
     padding-left: 30px;
-    color:#666;
+    color:rgb(7, 7, 7);
 }
 #notice_rolling1{
   width: 500px;
@@ -286,7 +286,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeda8', end
 }
 #notice_rolling1 ul li a{
   margin-right: 60px;
-  color: #666;
+  color: rgb(19, 18, 18);
 }
 .serch_tit{
     width: 100px;
@@ -294,7 +294,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeda8', end
     line-height: 50px;
     font-weight: 600;
     padding-left: 10px;
-    color:#666;
+    color:rgb(32, 32, 32);
     margin-right:30px;
 }
 #serch_rolling1{
@@ -307,7 +307,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeda8', end
 }
 #serch_rolling1 ul li a{
   margin-right: 60px;
-  color: #666;
+  color: rgb(29, 29, 29);
 }
 
 
